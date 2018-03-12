@@ -9,7 +9,6 @@
   "author": "TarKyo Dch",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.3.0",
-    "fs": "0.0.1-security"
+    "discord.js": "^11.3.0"
   }
 }
