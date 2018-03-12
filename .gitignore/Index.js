@@ -83,8 +83,7 @@ bot.on('message', message => {
 
 
 bot.on("ready", async () => {
-  console.log(`${bot.user.username} est en ligne sur ${bot.guilds.size} serveurs!`);
-
+  console.log(`${bot.user.username} est en ligne sur ${bot.guilds.size} serveurs!`)
 });
 
 bot.on("message", async message => {
