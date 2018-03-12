@@ -91,4 +91,4 @@ bot.on("ready", async () => {
 
 });
 
-bot.login('NDIyNzMyNDc3NDEzNDU3OTIw.DYgD4w.eoPXCi8KWQk2s4yA7trZk7SF3Mw');
+bot.login('');
