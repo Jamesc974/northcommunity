@@ -11,7 +11,7 @@ module.exports.run = async (bot, message, args) => {
     .setColor("#A901DB")
     .addField("Nouvelle annonce", areason);
 
-    let annonceschannel = message.guild.channels.find(`name`, "bot-message");
+    let annonceschannel = message.guild.channels.find(`name`, "annonce");
     if(!annonceschannel) return message.channel.send("❗ Impossible de trouver le canal des rapports.");
 
 
