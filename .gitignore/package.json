@@ -2,7 +2,7 @@
   "name": "northcommunity",
   "version": "1.0.0",
   "description": "Bot créé par TarKyo et DCH",
-  "main": "index.js",
+  "main": "Index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
