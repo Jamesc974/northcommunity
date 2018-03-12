@@ -11,6 +11,5 @@
   "dependencies": {
     "discord.js": "^11.3.0",
     "fs": "0.0.1-security",
-    "ms": "^2.1.1"
   }
 }
