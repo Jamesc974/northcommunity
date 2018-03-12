@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
+const fs = require("fs");
 version = "0.1 🎉";
 draincorp = "TarKyo 👔";
 
