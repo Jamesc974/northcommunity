@@ -91,4 +91,4 @@ bot.on("ready", async () => {
 
 });
 
-bot.login('');
+bot.login(process.env.TOKEN);
