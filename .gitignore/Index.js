@@ -10,7 +10,7 @@ bot.on('guildMemberAdd', member => {
   console.log('User ' + member.username + 'à rejoins le serveur ')
   var role = member.guild.roles.find('name', '🎮 Membre');
   member.addRole(role)
-})
+});
 
 bot.on('message', message => {
   if (message.content === '!graphiste') {
