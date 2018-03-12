@@ -1,23 +1,16 @@
 {
-  "name": "tutorial",
+  "name": "adminbotdch",
   "version": "1.0.0",
-  "description": "A tutorial bot for TSC",
+  "description": "Bot créé par TarKyo et DCH",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "ned",
+  "author": "TarKyo Dch",
   "license": "ISC",
   "dependencies": {
-    "cookiesdb": "^2.1.2",
     "discord.js": "^11.3.0",
-    "ffmpeg-binaries": "^3.2.2-3",
     "fs": "0.0.1-security",
-    "ms": "^2.1.1",
-    "quick.db": "^5.3.8",
-    "quick.log": "^1.2.1",
-    "quick.log-discord": "^1.1.0",
-    "weather-js": "^2.0.0",
-    "weather.js": "^0.1.0"
+    "ms": "^2.1.1"
   }
 }
