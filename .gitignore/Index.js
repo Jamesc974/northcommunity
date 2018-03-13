@@ -5,6 +5,10 @@ const fs = require("fs");
 bot.commands = new Discord.Collection();
 version = "0.1 🎉";
 draincorp = "TarKyo 👔";
+dev = "!développeur";
+graph = "!graphiste";
+mod = "!modélisateur";
+build = "!builder";
 
 // 💻Développeur, ✏ Graphiste, 🔧Modélisateur, 🏢Builder, 🎮 Membre
 
