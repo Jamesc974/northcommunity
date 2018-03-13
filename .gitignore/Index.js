@@ -11,7 +11,44 @@ draincorp = "TarKyo 👔";
 bot.on('guildMemberAdd', member => {
   console.log('User ' + member.username + 'à rejoins le serveur ')
   var role = member.guild.roles.find('name', '🎮 Membre');
+  var iconb = bot.user.avatarURL;
+  var memberCount = bot.users.size;
+  var servercount = bot.guilds.size;
+  var statsmsg = new Discord.RichEmbed()
+  .setAuthor("Bienvenue", iconb)
+  .setDescription(`Bienvenue à vous sur le serveur Communautaire **North Community** pour avoir un grade faite **!grade** ou rend toi dans le channel **#rejoindre-un-grade**`)
+  .setThumbnail(iconb)
+  .addField("Support¬", '[Rejoindre](https://discord.gg/yBmzHbf)', true)
+  .addField("Créateur¬", '`'+ draincorp + '`', true)
+  .setColor("#A901DB")
   member.addRole(role)
+  member.createDM().then(channel => {
+    channel.send(statsmsg)
+
+  })
+
+});
+
+bot.on('message', message => {
+  if (message.content === '!grade') {
+    var role = new Discord.RichEmbed()
+    var iconb = bot.user.avatarURL;
+    var iconm = message.author.avatarURL
+    var name = message.guild.id
+    var memberCount = bot.users.size;
+    var servercount = bot.guilds.size;
+    var statsmsg = new Discord.RichEmbed()
+    .setAuthor("Liste des grade que vous pouvez rejoindre", iconb)
+    .setThumbnail(iconb)
+    .addField("💻Développeur¬", '`'+ dev + '`', true)
+    .addField("✏ Graphiste¬", '`'+ graph + '`',true)
+    .addField("🔧Modélisateur¬", '`'+ mod + '`', true)
+    .addField(`🏢Builder¬`, '`'+ build + '`', true)
+    .setColor("#A901DB")
+    .setFooter(`Demandé par ${message.author.tag}`, iconm)
+    message.channel.fetchMessages({limit: 1}).then(messages => message.channel.bulkDelete(messages));
+    message.channel.sendMessage(statsmsg);
+  }
 });
 
 bot.on('message', message => {
