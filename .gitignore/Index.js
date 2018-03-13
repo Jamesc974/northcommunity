@@ -58,48 +58,97 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content === '!graphiste') {
     var RoleToAdd = message.guild.roles.find('name', '✏ Graphiste');
+    var memberCount = bot.users.size;
+    var iconb = bot.user.avatarURL
+    var iconm = message.author.avatarURL
+    var servercount = bot.guilds.size;
     var role = new Discord.RichEmbed()
     .setDescription(`:white_check_mark: **${message.author.tag}** vient de rejoindre le groupe de **Graphiste** `)
     .setColor("#009900");
-    message.channel.fetchMessages({limit: 1}).then(messages => message.channel.bulkDelete(messages));
-    message.member.addRole(RoleToAdd);
+    var grade = new Discord.RichEmbed()
+    .setAuthor(`${message.author.tag} vien de rejoindre un grade`, iconm)
+    .addField("Pseudo¬", `${message.author.tag}`, true)
+    .addField("Grade¬", '` ✏ Graphiste `', true)
+    .setColor("#bc0000")
+    .setFooter(`Développé par Tarkyo•`, iconb)
+
+    message.delete().catch(O_o=>{});
     message.channel.sendMessage(role).then(msg => msg.delete(5000));
+    var gradem = message.guild.channels.find(`name`, "moderation");
+    gradem.send(grade);
   }
 });
+
 
 bot.on('message', message => {
   if (message.content === '!modélisateur') {
     var RoleToAdd = message.guild.roles.find('name', '🔧Modélisateur');
+    var memberCount = bot.users.size;
+    var iconb = bot.user.avatarURL
+    var iconm = message.author.avatarURL
+    var servercount = bot.guilds.size;
     var role = new Discord.RichEmbed()
     .setDescription(`:white_check_mark: **${message.author.tag}** vient de rejoindre le groupe de **Modélisateur** `)
     .setColor("#009900");
-    message.channel.fetchMessages({limit: 1}).then(messages => message.channel.bulkDelete(messages));
-    message.member.addRole(RoleToAdd);
+    var grade = new Discord.RichEmbed()
+    .setAuthor(`${message.author.tag} vien de rejoindre un grade`, iconm)
+    .addField("Pseudo¬", `${message.author.tag}`, true)
+    .addField("Grade¬", '` 🔧Modélisateur `', true)
+    .setColor("#bc0000")
+    .setFooter(`Développé par Tarkyo•`, iconb)
+
+    message.delete().catch(O_o=>{});
     message.channel.sendMessage(role).then(msg => msg.delete(5000));
+    var gradem = message.guild.channels.find(`name`, "moderation");
+    gradem.send(grade);
   }
 });
 
 bot.on('message', message => {
   if (message.content === '!développeur') {
     var RoleToAdd = message.guild.roles.find('name', '💻Développeur');
+    var memberCount = bot.users.size;
+    var iconb = bot.user.avatarURL
+    var iconm = message.author.avatarURL
+    var servercount = bot.guilds.size;
     var role = new Discord.RichEmbed()
     .setDescription(`:white_check_mark: **${message.author.tag}** vient de rejoindre le groupe de **Développeur** `)
     .setColor("#009900");
-    message.channel.fetchMessages({limit: 1}).then(messages => message.channel.bulkDelete(messages));
-    message.member.addRole(RoleToAdd);
+    var grade = new Discord.RichEmbed()
+    .setAuthor(`${message.author.tag} vien de rejoindre un grade`, iconm)
+    .addField("Pseudo¬", `${message.author.tag}`, true)
+    .addField("Grade¬", '` 💻 Développeur `', true)
+    .setColor("#bc0000")
+    .setFooter(`Développé par Tarkyo•`, iconb)
+
+    message.delete().catch(O_o=>{});
     message.channel.sendMessage(role).then(msg => msg.delete(5000));
+    var gradem = message.guild.channels.find(`name`, "moderation");
+    gradem.send(grade);
   }
 });
 
 bot.on('message', message => {
   if (message.content === '!builder') {
     var RoleToAdd = message.guild.roles.find('name', '🏢Builder');
+    var memberCount = bot.users.size;
+    var iconb = bot.user.avatarURL
+    var iconm = message.author.avatarURL
+    var servercount = bot.guilds.size;
     var role = new Discord.RichEmbed()
     .setDescription(`:white_check_mark: **${message.author.tag}** vient de rejoindre le groupe de **Builder** `)
     .setColor("#009900");
-    message.channel.fetchMessages({limit: 1}).then(messages => message.channel.bulkDelete(messages));
-    message.member.addRole(RoleToAdd);
+    var grade = new Discord.RichEmbed()
+    .setAuthor(`${message.author.tag} vien de rejoindre un grade`, iconm)
+    .addField("Pseudo¬", `${message.author.tag}`, true)
+    .addField("Grade¬", '` 🏢 Builder `', true)
+    .setColor("#bc0000")
+    .setFooter(`Développé par Tarkyo•`, iconb)
+
+    message.delete().catch(O_o=>{});
     message.channel.sendMessage(role).then(msg => msg.delete(5000));
+    var gradem = message.guild.channels.find(`name`, "moderation");
+    gradem.send(grade);
   }
 });
 
