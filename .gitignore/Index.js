@@ -57,7 +57,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === '!graphiste') {
-    var RoleToAdd = message.guild.roles.find('name', '✏ Graphiste');
+    var RoleToAdd = message.guild.roles.find('name', 'Graphiste');
     var memberCount = bot.users.size;
     var iconb = bot.user.avatarURL
     var iconm = message.author.avatarURL
@@ -82,7 +82,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === '!modélisateur') {
-    var RoleToAdd = message.guild.roles.find('name', '🔧Modélisateur');
+    var RoleToAdd = message.guild.roles.find('name', 'Modélisateur');
     var memberCount = bot.users.size;
     var iconb = bot.user.avatarURL
     var iconm = message.author.avatarURL
@@ -106,7 +106,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === '!développeur') {
-    var RoleToAdd = message.guild.roles.find('name', '💻Développeur');
+    var RoleToAdd = message.guild.roles.find('name', 'Développeur');
     var memberCount = bot.users.size;
     var iconb = bot.user.avatarURL
     var iconm = message.author.avatarURL
@@ -130,7 +130,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if (message.content === '!builder') {
-    var RoleToAdd = message.guild.roles.find('name', '🏢Builder');
+    var RoleToAdd = message.guild.roles.find('name', 'Builder');
     var memberCount = bot.users.size;
     var iconb = bot.user.avatarURL
     var iconm = message.author.avatarURL
@@ -141,7 +141,7 @@ bot.on('message', message => {
     var grade = new Discord.RichEmbed()
     .setAuthor(`${message.author.tag} vien de rejoindre un grade`, iconm)
     .addField("Pseudo¬", `${message.author.tag}`, true)
-    .addField("Grade¬", '` 🏢 Builder `', true)
+    .addField("Grade¬", '` 🏢Builder `', true)
     .setColor("#bc0000")
     .setFooter(`Développé par Tarkyo•`, iconb)
 
@@ -156,10 +156,10 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content === '!leave') {
     var RoleToAdd = message.guild.roles.find('name', '🎮 Membre');
-    let gRole = message.guild.roles.find(`name`,'✏ Graphiste');
-    let mRole = message.guild.roles.find(`name`,'🔧Modélisateur');
-    let bRole = message.guild.roles.find(`name`,'🏢Builder');
-    let dRole = message.guild.roles.find(`name`,'💻Développeur');
+    let gRole = message.guild.roles.find(`name`,'Graphiste');
+    let mRole = message.guild.roles.find(`name`,'Modélisateur');
+    let bRole = message.guild.roles.find(`name`,'Builder');
+    let dRole = message.guild.roles.find(`name`,'Développeur');
     var role = new Discord.RichEmbed()
     .setDescription(`:x: **${message.author.tag}** est maintenant **Membre** `)
     .setColor("#009900");
