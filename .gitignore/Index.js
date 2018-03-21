@@ -81,8 +81,8 @@ bot.on('message', message => {
 
 
 bot.on('message', message => {
-  if (message.content === '!modélisateur') {
-    var RoleToAdd = message.guild.roles.find('name', 'Modélisateur');
+  if (message.content === '!modelisateur') {
+    var RoleToAdd = message.guild.roles.find('name', 'Modelisateur');
     var memberCount = bot.users.size;
     var iconb = bot.user.avatarURL
     var iconm = message.author.avatarURL
@@ -105,8 +105,8 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-  if (message.content === '!développeur') {
-    var RoleToAdd = message.guild.roles.find('name', 'Développeur');
+  if (message.content === '!developpeur') {
+    var RoleToAdd = message.guild.roles.find('name', 'Developpeur');
     var memberCount = bot.users.size;
     var iconb = bot.user.avatarURL
     var iconm = message.author.avatarURL
