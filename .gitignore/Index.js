@@ -76,7 +76,7 @@ bot.on('message', message => {
     message.channel.sendMessage(role).then(msg => msg.delete(5000));
     var gradem = message.guild.channels.find(`name`, "moderation");
     gradem.send(grade);
-    message.author.addRole(RoleToAdd);
+    message.member.addRole(RoleToAdd);
   }
 });
 
@@ -102,6 +102,7 @@ bot.on('message', message => {
     message.channel.sendMessage(role).then(msg => msg.delete(5000));
     var gradem = message.guild.channels.find(`name`, "moderation");
     gradem.send(grade);
+    message.member.addRole(RoleToAdd);
   }
 });
 
@@ -126,6 +127,7 @@ bot.on('message', message => {
     message.channel.sendMessage(role).then(msg => msg.delete(5000));
     var gradem = message.guild.channels.find(`name`, "moderation");
     gradem.send(grade);
+    message.member.addRole(RoleToAdd);
   }
 });
 
@@ -150,6 +152,7 @@ bot.on('message', message => {
     message.channel.sendMessage(role).then(msg => msg.delete(5000));
     var gradem = message.guild.channels.find(`name`, "moderation");
     gradem.send(grade);
+    message.member.addRole(RoleToAdd);
   }
 });
 
