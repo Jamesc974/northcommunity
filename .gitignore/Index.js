@@ -177,6 +177,28 @@ bot.on('message', message => {
   }
 });
 
+bot.on('message', message => {
+  if (message.content.startsWith(prefix + "annonce")) {
+    if(message.author.id == "104935392658137088") {
+      let args = message.content.split(" ").slice(1);
+      let thingToEcho = args.join(" ")
+      var iconm = message.author.avatarURL
+      var embed = new Discord.RichEmbed()
+        .setAuthor("📋 Annonce", iconm)
+        .addField("Répondre avec :ok_hand: ou :poop:", thingToEcho)
+        .setColor("#DF0101")
+        .setTimestamp()
+        .setFooter(`Par ${message.author.tag}`)
+      message.delete().catch(O_o=>{});
+      message.guild.channels.find("name", "annonce").sendEmbed(embed)
+      .then(function (message) {
+        message.react("👍")
+        message.react("👎")
+      }).catch(function() {
+      });
+    }else{
+      return message.reply("Tu n'as pas la permission.")
+  }}});
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} est en ligne sur ${bot.guilds.size} serveurs!`)
