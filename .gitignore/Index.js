@@ -1,3 +1,4 @@
+
 const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
@@ -9,6 +10,7 @@ dev = "!développeur";
 graph = "!graphiste";
 mod = "!modélisateur";
 build = "!builder";
+prefix = botconfig.prefix;
 
 // 💻Développeur, ✏ Graphiste, 🔧Modélisateur, 🏢Builder, 🎮 Membre
 
